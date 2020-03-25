@@ -1,0 +1,31 @@
+body {
+  background: #dae0e8; 
+  }
+.editor_box {
+    width: 900px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    text-align: center; 
+    }
+    
+.editor_box .cropped-image {
+      max-width: 100%;
+      height: auto; 
+       }
+.editor_box .control_box {
+      text-align: center;
+      margin: 20px 0px;
+      top: 10px;
+       }
+.save {
+        background:#00647d ;
+        font-size: 15px;
+        color: #ffffff;
+        text-decoration: none;
+        padding: 8px 25px;
+        border-radius: 3px;
+        margin-left: 5px; 
+        }
+   
+
