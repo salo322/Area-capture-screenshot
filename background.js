@@ -40,7 +40,7 @@ var Screenshot = {
 	},
 	getScreenshotLocalName: function () {
 		var date = new Date();
-		return date.getDate() + '_' + date.getHours() + '_' + date.getMinutes() +  '.png';
+		return date.getDate() + '_' + date.getHours() + '_' + date.getMinutes() + '_' + date.getSeconds() + '__' + Math.random() + '.png';
 	}
 }
 chrome.browserAction.onClicked.addListener(function (tab) {
@@ -49,6 +49,7 @@ chrome.browserAction.onClicked.addListener(function (tab) {
 		chrome.tabs.executeScript(null, {code: "window.overlay_toggle();"});
 	}, 100);
 });
+
 chrome.extension.onMessage.addListener(
 	function (request, sender, sendResponse) {
 		if (request.screenshotCoords != undefined) {

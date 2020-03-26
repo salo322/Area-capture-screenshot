@@ -6,6 +6,7 @@ function overlay_toggle() {
 			onSelect: function (c) {
 				chrome.extension.sendMessage({
 					screenshotCoords: c,
+					
 				});
 				jQuery('.simple_screenshot_bg').remove();
 			},
