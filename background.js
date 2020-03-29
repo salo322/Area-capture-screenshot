@@ -3,14 +3,14 @@ var Screenshot = {
 	getScreenshot: function () {
 		Screenshot.getDevicePixelRatio();
 		chrome.tabs.captureVisibleTab(null, {}, function (image) {
-			Screenshot.currentImage = image;
+			Screenshot.currentImage = image; 
 		});
 	},
 	openEditorPage: function () {
 		this.preCropImage();
 		chrome.tabs.create({'url': chrome.extension.getURL('newPage.html')}, function (tab) {
 			Screenshot.cropImage();
-		});
+		}); 
 	},
 	preCropImage: function () {
 		this.virtualImage = new Image; 
