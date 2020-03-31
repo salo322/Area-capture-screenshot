@@ -55,7 +55,7 @@ chrome.extension.onMessage.addListener(
 		if (request.screenshotCoords != undefined) {
 			Screenshot.imageObg = request.screenshotCoords;
 			Screenshot.localName = Screenshot.getScreenshotLocalName();
-			Screenshot.openEditorPage();
+			Screenshot.openEditorPage(); 
 		}
 	}
 );

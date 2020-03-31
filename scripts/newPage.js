@@ -4,5 +4,8 @@ jQuery(document).ready(function () {
 		'href': chrome.extension.getBackgroundPage().Screenshot.linkBlobFile,
 		'download': chrome.extension.getBackgroundPage().Screenshot.localName
 	});
+	jQuery('.close').click(function(){
+		window.close();
+	})
 	});
 

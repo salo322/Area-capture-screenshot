@@ -29,3 +29,13 @@ body {
         }
    
 
+.close{
+  background:#00647d ;
+  font-size: 15px;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 8px 25px;
+  border-radius: 3px;
+  margin-left: 10px; 
+  border:none;
+}
